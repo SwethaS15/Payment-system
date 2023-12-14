@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Payment System</title>
+</head>
+<body>
+    <div id="connectingPage" class="hidden">
+        <h1>Connecting Securely...</h1>
+        <div id="imageContainer">
+            <img src="https://path-to-your-connecting-gif.gif" alt="Connecting securely...">
+        </div>
+    </div>
+
+ 
+<div id="successPage" class="hidden">
+    <h1>Transaction Succeeded</h1>
+    <div id="status" style="color: green;"></div>
+    <div id="imageContainerSuccess"></div>
+    <button class="btns" onclick="showHomeButton()">Home</button>
+</div>
+
+<div id="failurePage" class="hidden">
+    <h1>Transaction Failed</h1>
+    <div id="status" style="color: red;"></div>
+    <div id="imageContainerFailure"></div>
+    <button class="btns" onclick="showHomeButton()">Home</button>
+</div>
+
+
+    <div id="inputPage">
+        <h1>Payment System</h1>
+        <img id="logo" src="https://www.techlofy.com/wp-content/uploads/2020/11/PhonePe-zips-past-Google-Pay-in-India-as-UPI-tops-2B-monthly-transactions.jpg" alt="logo">
+        <div id="btn-holder">
+            <input type="number" placeholder="Please enter the amount" id="input">
+            <button onclick="initiatePayment()">Pay</button>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
+
+
+
